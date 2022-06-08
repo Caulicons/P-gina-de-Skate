@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../../../font/icones.ttf);
+}
+
+.principal {
+    padding: 24px;
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-pagina {
+    font-size: 1.9rem;
+    padding: 8px 0;
+    font-weight: bold;
+}
+
+.secao {
+    display: grid;
+    gap: 16px
+}
+
+.secao__nova-arte {
+    padding: 18px 0
+}
+
+.titulo-section {
+    font-size: 1.5rem;
+    font-weight: bold 
+}
+
+/* Tablet */
+@media screen and (min-width: 768px){
+
+    .principal {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina "
+        "destaque-videos destaque-videos"
+        "secao-videos secao-videos"
+        ;
+        column-gap: 32px;
+        padding: 16px 60px;
+    }
+
+    .titulo-pagina{
+        grid-area: titulo-pagina
+    }
+
+    .secao-videos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .titulo-section {
+        grid-column: 1/5
+    }
+
+    .destaque-videos {
+        grid-area: destaque-videos;
+    }
+    
+    .recentes-videos {
+        grid-area: recentes-videos
+    }
+    
+    .secao-videos {
+        grid-area: secao-videos
+    }
+}
+
+/* Desktop  */
+@media screen and (min-width: 1024px) {
+    .principal {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina"
+        "destaque-videos destaque-videos recentes-videos"
+        "secao-videos secao-videos secao-videos"
+        "recentes-produtos destaque-produtos destaque-produtos"
+        ;
+        column-gap: 32px;
+        padding: 16px 60px;
+    }
+
+    .titulo-pagina{
+        grid-area: titulo-pagina
+    }
+
+    .secao-videos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .titulo-section {
+        grid-column: 1/5
+    }
+
+    .destaque-videos {
+        grid-area: destaque-videos;
+    }
+    
+    .recentes-videos {
+        grid-area: recentes-videos
+    }
+    
+    .secao-videos {
+        grid-area: secao-videos
+    }
+    
+    .destaque-produtos {
+        grid-area: destaque-produtos;
+    }
+}
+
