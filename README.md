@@ -1,4 +1,4 @@
-# Guia de estilos
+# Página de Skate 🛹
 
 ![project preview](./preview.gif).
 
